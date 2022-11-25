@@ -1,0 +1,43 @@
+.nav{
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  /* box-shadow: 1px 1px 1px 1px black; */
+}
+h1{
+  font-family: 'EvelethDotW01-Bold';
+  margin: 1%;
+}
+
+.lista{
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.lista li{
+  margin-left: 10px;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.lista li:hover{
+  color: #f09819;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  color:#f09819;
+}
+
+.logoNav{
+  width: 10%;
+  object-fit: contain;
+  margin-left: 2%;
+  
+}
