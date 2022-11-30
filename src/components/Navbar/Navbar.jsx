@@ -1,12 +1,13 @@
 import React, { useState } from "react";
-import "./Navbar.css";
+/* import "./Navbar.css"; */
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import images from "../../images/images.js";
 import { slide as Menu } from 'react-burger-menu'
+import BurgerButton from "./Burgerbutton";
 
 
-const Navbar = () => {
+/* const Navbar = () => {
   return (
    <div class="nav">
     <img src={images.logo} class="logoNav"></img>
@@ -16,10 +17,29 @@ const Navbar = () => {
       <li><Link to='/empresa'>Nosotros</Link></li>
       <Link to='/contacto'><Contact href='mailto:ivogarrachip@gmail.com'><button class="button-87" role="button" >Contacto</button></Contact></Link>
     </ul>
-    {/*aca va el menu responsive 'burger' */} 
-    {/* <Menu className="menu"></Menu> */}
+
    </div>
 )}
+
+ */
+
+const Navbar = () =>{
+  return(
+    <NavStyle>
+      <img src={images.logo} class="logoNav"></img>
+      <ul class="lista">
+        <li><Link to='/'>Inicio</Link></li>
+        <li><Link to='/trabajos'>Trabajos</Link></li>
+        <li><Link to='/empresa'>Nosotros</Link></li>
+        <Link to='/contacto'><Contact href='mailto:ivogarrachip@gmail.com'><button class="button-87" role="button" >Contacto</button></Contact></Link>
+      </ul>
+      <div className="burger">
+        <BurgerButton></BurgerButton>
+      </div>
+    </NavStyle>
+  )
+}
+
 
 export default Navbar;
 
@@ -64,4 +84,67 @@ const Logo = styled.img`
   height: auto;
   width: 10%;
   align-items: center;
+`
+
+const NavStyle = styled.nav`
+  .nav{
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  /* box-shadow: 1px 1px 1px 1px black; */
+}
+.lista{
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.lista li{
+  margin-left: 10px;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.lista li:hover{
+  color: #f09819;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  color:#f09819;
+}
+
+.logoNav{
+  width: 10%;
+  object-fit: contain;
+  margin-left: 2%;
+}
+
+.menu{
+  
+}
+
+@media (max-width: 764px) {
+  .lista{
+    display: none;
+  }
+  .logoNav{
+    width: 30%;
+    margin:2%;
+    /* margin-left: 32%; */
+  }
+  display :flex;
+  
+}
+
+  .burger{
+    @media (min-width: 764px) {
+      display: none;
+    }
+  }
 `

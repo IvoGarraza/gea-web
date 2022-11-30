@@ -34,6 +34,8 @@ const HomeFinalStyle=styled.div`
     display: flex;
     justify-content: space-around;
     text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
     .contentCard{
         width:  30%;
         height: 400px;
