@@ -1,7 +1,7 @@
-.contador{
-    height:155px;
+.contador2{
+    height:50px;
     width: 320px;
- transform: rotate(180deg);
+    transform: rotate(180deg);
     margin: 200px 100px;
     position: relative;
   

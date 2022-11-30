@@ -4,12 +4,12 @@ import './contador.css'
 
 const Contador =()=>{
     return(
-    <div class="contador">
+    <div class="contador2">
         <div class="color_fondo" id="fondo_color">
          
         </div>
         <div class="numero" id="numero">
-          
+          100
         </div>
     </div>
         

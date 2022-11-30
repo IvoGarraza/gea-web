@@ -36,7 +36,7 @@ const HomeFinalStyle=styled.div`
     text-align: center;
     .contentCard{
         width:  30%;
-        height: 500px;
+        height: 100px;
         padding:4%;
         border: 1px solid black;
         margin: 3%;
