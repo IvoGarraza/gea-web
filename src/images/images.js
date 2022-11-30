@@ -12,6 +12,10 @@ import icon4 from './icons/world.png'
 import carousel1 from'./carousel1.jpg'
 import carousel2 from './carousel2.jpg'
 import carousel3 from './carousel3.jpg'
+import stockImage4 from './stockImage4.jpg'
+import maquina from './maquina.jpg'
+import maquina2 from './maquina2.jpg'
+import maquina3 from './maquina3.jpg'
 
 export default{
     "homeImg": homeImg,
@@ -27,5 +31,9 @@ export default{
     "icon4": icon4,
     "carousel1": carousel1,
     "carousel2": carousel2,
-    "carousel3": carousel3
+    "carousel3": carousel3,
+    "stockImage4": stockImage4,
+    "maquina": maquina,
+    "maquina2": maquina2,
+    "maquina3": maquina3
 }

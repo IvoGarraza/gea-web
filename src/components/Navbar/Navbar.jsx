@@ -3,6 +3,8 @@ import "./Navbar.css";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import images from "../../images/images.js";
+import { slide as Menu } from 'react-burger-menu'
+
 
 const Navbar = () => {
   return (
@@ -14,6 +16,7 @@ const Navbar = () => {
       <li><Link to='/empresa'>Nosotros</Link></li>
       <Link to='/contacto'><Contact href='mailto:ivogarrachip@gmail.com'><button class="button-87" role="button" >Contacto</button></Contact></Link>
     </ul>
+    {/* <Menu className="menu"></Menu> */}
    </div>
 )}
 

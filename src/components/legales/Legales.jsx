@@ -56,14 +56,14 @@ const Legales = () =>{
             i.- rectificación, actualización, supresión -plazo máximo de respuesta: 5 días hábiles de la comunicación fehaciente-,
             ii.- acceso a los datos en forma gratuita a intervalos no inferiores a 6 meses, salvo que se acredite un interés legítimo al efecto -plazo máximo de respuesta: 10 días corridos de la comunicación fehaciente-,
             iii.- retiro o bloqueo total o parcial de sus datos con fines publicitarios -plazo de respuesta: 5 días hábiles de la comunicación fehaciente-.
-            Estos derechos podrán efectivizarse a través de comunicación fehaciente dirigida a: GEA SRL – Datos personales – Av. Corrientes 485, 10° piso (C1043AAE), Provincia de Buenos Aires o bien mediante notificación escrita al e-mail pablo.neme@GEA SRL.com
+            Estos derechos podrán efectivizarse a través de comunicación fehaciente dirigida a: GEA SRL – Datos personales – DIRECCION, Provincia de Córdoba o bien mediante notificación escrita al e-mail ADMINISTRACION@GEA SRL.com
             </p>
             <br></br>
             <br></br>
             <br></br>
             <h2>NAVEGACIÓN ANÓNIMA A TRAVÉS DE LAS PÁGINAS WEB</h2>
             <br></br>
-            <p>GEA SRL obtiene información anónima acerca de sus visitantes, lo que significa que dicha información no puede ser asociada a un usuario concreto e identificado. Los datos que se conservan son únicamente:
+            <p>GEA SRL obtiene información anóni    ma acerca de sus visitantes, lo que significa que dicha información no puede ser asociada a un usuario concreto e identificado. Los datos que se conservan son únicamente:
             a) La fecha y hora de acceso a nuestro Sitio para los links “on-line”. Ello nos permite conocer las horas de mayor afluencia y realizar los ajustes necesarios para evitar problemas de acceso.
             b) El número de visitantes diarios de las secciones on-line. Ello nos permite conocer las áreas de mayor interés y aumentar y mejorar su contenido, con el fin de que los usuarios obtengan un resultado más satisfactorio.</p>
             <br></br>

@@ -113,6 +113,13 @@ const CardStyle = styled.div`
         }
       
     }
+    @media (max-width: 764px) {
+      flex-direction: column;
+      .card{
+        width: 90%;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 40px -7px;
+      }
+    }
 `
 const CardStyle2 = styled.div`
      display: flex;

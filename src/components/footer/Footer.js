@@ -26,12 +26,12 @@ const Footer = () =>{
             </ul>
             <h1 class='nombreFooter'>GEA</h1>
         </div> */
-        <footer className='footerContainer' data-aos='fade-up'>
+        <footer className='footerContainer'>
 
         <div class="container__footer">
             <div class="box__footer">
                 <div class="logo">
-                <Gea class='nombreFooter'>GEA</Gea>
+                <Gea class='nombreFooter'>GE</Gea>
                 </div>
 {/*                 <div class="terms">
                     
@@ -77,5 +77,5 @@ export default Footer
 const Gea = styled.h2`
     color: white;
     align-items: center;
-    font-family: 'EvelethDotW01-Bold'
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 `

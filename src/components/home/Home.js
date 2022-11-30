@@ -1,7 +1,6 @@
 import { hover } from "@testing-library/user-event/dist/hover";
 import React, {useState, useEffect} from "react";
 import images from "../../images/images";
-import './Home.css'
 import styled from "styled-components";
 import Cards from "../cards/cards";
 import Footer from "../footer/Footer";
@@ -10,8 +9,7 @@ import { Link } from "react-router-dom";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import AOS from 'aos';
 import'aos/dist/aos'
-import Arrow from "./arrow/arrow";
-import Arrow2 from "./arrow/arrow2";
+import HomeFinal from '../home2/HomeFinal'
 
 
 const Home = () =>{
@@ -22,11 +20,11 @@ const Home = () =>{
         <div>
             <header>
                 <HomeH1>
-                    <Image src={images.stockImage3}></Image>
-                    <h1 data-aos='fade-down'>Estudios de suelo,<br></br>
+                    <Image src={images.stockImage3} className='imgHome'></Image>
+                    <h1 className="titleHome" data-aos='fade-down'>Estudios de suelo,<br></br>
                     Impacto Ambiental<br></br>
                     Cálculos de fundación</h1>
-                    <AboutStyled ><Link to='/empresa'><button class="button-89" role="button" data-aos='fade-down'>Conocenos 🡪</button></Link></AboutStyled>
+                    <AboutStyled className="botonHome"><Link to='/empresa'><button class="button-89" role="button" data-aos='fade-down'>Conocenos 🡪</button></Link></AboutStyled>
                     {/* <Arrow class='arrow'></Arrow> */}
                     {/* <Arrow2></Arrow2> */}
                 </HomeH1>
@@ -40,6 +38,7 @@ const Home = () =>{
                   duration3='3000' img3={images.icon3}
                   duration4='3000' img4={images.icon4}></Cards>
             <Clientes></Clientes>
+            <HomeFinal></HomeFinal>
             <Footer></Footer>
             <FloatingWhatsApp phoneNumber="+5493513874298"
                               accountName='GEA'
@@ -73,7 +72,18 @@ const HomeH1 = styled.div`
         color: white;
         left: 5%;
         text-align: center;
-        bottom: 35%;
+        bottom: 45%;
+    }
+    @media (max-width:764px) {
+      .imgHome{
+        height: 300px;
+      }
+      .titleHome{
+        top: 15%;
+        align-items: center;
+        text-align: center;
+      }
+      
     }
 `
 
@@ -87,6 +97,12 @@ const Wave = styled.div`
 
 const AboutStyled = styled.button`
 
+    @media (max-width: 764px) {
+      .button-89{
+        left: 2px;
+        bottom: 20px;
+      }
+    }
 /* CSS */
 .button-89 {
   --b: 3px;   /* border thickness */
@@ -111,8 +127,8 @@ const AboutStyled = styled.button`
   touch-action: manipulation;
   position: absolute;
   color: #fff;
-  left: 170px;
-  bottom: 150px;
+  left: 11%;
+  bottom: 30%;
 }
 
 .button-89:hover,
