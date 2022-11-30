@@ -36,7 +36,7 @@ const HomeFinalStyle=styled.div`
     text-align: center;
     .contentCard{
         width:  30%;
-        height: 100px;
+        height: 400px;
         padding:4%;
         border: 1px solid black;
         margin: 3%;
@@ -49,7 +49,7 @@ const HomeFinalStyle=styled.div`
     }
     .contentCard:hover{
         img{
-            animation: imagen 1s;
+            animation: imagen 0.3s;
             animation-fill-mode: forwards;
         }
     }
@@ -88,6 +88,7 @@ const HomeFinalStyle=styled.div`
 
     @media (max-width: 764px) {
         flex-direction: column;
+        align-items: center;
         .contentCard{
             width: 90%;
         }

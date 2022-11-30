@@ -16,6 +16,7 @@ const Navbar = () => {
       <li><Link to='/empresa'>Nosotros</Link></li>
       <Link to='/contacto'><Contact href='mailto:ivogarrachip@gmail.com'><button class="button-87" role="button" >Contacto</button></Contact></Link>
     </ul>
+    {/*aca va el menu responsive 'burger' */} 
     {/* <Menu className="menu"></Menu> */}
    </div>
 )}

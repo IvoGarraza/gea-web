@@ -79,9 +79,15 @@ const HomeH1 = styled.div`
         height: 300px;
       }
       .titleHome{
-        top: 15%;
+        top: 20%;
+        left: 5%;
         align-items: center;
         text-align: center;
+      }
+      .botonHome{
+        position: absolute;
+        top:55%;
+        left: 33%;
       }
       
     }

@@ -58,4 +58,12 @@ const ClientesStyle = styled.div`
         grid-template-rows: 4rem 4rem 4rem 4rem ;
         color: #ffffff;
     }
+
+    @media (max-width: 764px) {
+        .containerClientes{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 4rem 4rem 4rem 4rem 4rem;
+        }
+        .capa{}
+    }
 `

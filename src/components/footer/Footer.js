@@ -31,7 +31,7 @@ const Footer = () =>{
         <div class="container__footer">
             <div class="box__footer">
                 <div class="logo">
-                <Gea class='nombreFooter'>GE</Gea>
+                <Gea class='nombreFooter'>GEA</Gea>
                 </div>
 {/*                 <div class="terms">
                     
