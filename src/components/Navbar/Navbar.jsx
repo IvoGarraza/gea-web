@@ -11,7 +11,7 @@ import BurgerButton from "./Burgerbutton";
   return (
    <div class="nav">
     <img src={images.logo} class="logoNav"></img>
-    <ul class="lista">
+    <ul class="links">
       <li><Link to='/'>Inicio</Link></li>
       <li><Link to='/trabajos'>Trabajos</Link></li>
       <li><Link to='/empresa'>Nosotros</Link></li>
@@ -24,18 +24,23 @@ import BurgerButton from "./Burgerbutton";
  */
 
 const Navbar = () =>{
+  const [clicked, setClicked] = useState(false)
+  const handleClick = () =>{
+    setClicked(!clicked)
+  }
   return(
     <NavStyle>
-      <img src={images.logo} class="logoNav"></img>
-      <ul class="lista">
+      <img src={images.logo} className="logoNav"></img>
+      <ul className={`links ${clicked ? 'active': ''}`}>
         <li><Link to='/'>Inicio</Link></li>
         <li><Link to='/trabajos'>Trabajos</Link></li>
         <li><Link to='/empresa'>Nosotros</Link></li>
         <Link to='/contacto'><Contact href='mailto:ivogarrachip@gmail.com'><button class="button-87" role="button" >Contacto</button></Contact></Link>
       </ul>
       <div className="burger">
-        <BurgerButton></BurgerButton>
+        <BurgerButton clicked={clicked} handleClick={handleClick}></BurgerButton>
       </div>
+      <BgDiv className={`inital ${clicked ? 'active': ''}`}></BgDiv>
     </NavStyle>
   )
 }
@@ -55,7 +60,7 @@ const Contact = styled.li`
   background-size: 200% auto;
   color: white;
   border-radius: 10px;
-  display: block;
+ /*  display: block; */
   border: 0px;
   font-weight: 700;
   font-weight: bold;
@@ -91,23 +96,30 @@ const NavStyle = styled.nav`
   background-color: rgb(255, 255, 255);
   border-bottom: 1px solid black;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  
   /* box-shadow: 1px 1px 1px 1px black; */
 }
-.lista{
+.links{
   display: inline-flex;
   justify-content: space-around;
   align-items: center;
   list-style: none;
+  position: absolute;
+  right: 1%;
 }
-
-.lista li{
+.links.active{
+  
+}
+.links li{
   margin-left: 10px;
   margin: 10px;
   font-weight: bold;
+  position: initial;
 }
 
-.lista li:hover{
+.links li:hover{
   color: #f09819;
 }
 
@@ -123,28 +135,58 @@ a:hover{
   width: 10%;
   object-fit: contain;
   margin-left: 2%;
+  margin:1%;
 }
 
-.menu{
-  
+.burger{
+  display: none;
 }
 
 @media (max-width: 764px) {
-  .lista{
-    display: none;
+  .links{
+    position: absolute;
+    right:-700px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    transition: all .5s ease;
+  }
+
+  .links.active{
+    width: 100%;
+    color:black;
+    display: block;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top:30%;
+    text-align: center;
+    align-items: center;
+    left: 0;
+    right: 0;
   }
   .logoNav{
     width: 30%;
     margin:2%;
     /* margin-left: 32%; */
   }
+  .burger{
+    display: flex;
+  }
   display :flex;
+  justify-content: space-between;
   
 }
 
-  .burger{
-    @media (min-width: 764px) {
-      display: none;
-    }
-  }
+ 
+`
+
+const BgDiv = styled.div`
+  background-color: black;
+  position: absolute;
+  width:100%;
+  height: 100%;
+  top: 0;
+  left:-7000px;
+  z-index: -1;
 `

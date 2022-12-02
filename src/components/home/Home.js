@@ -40,7 +40,8 @@ const Home = () =>{
             <Clientes></Clientes>
             <HomeFinal></HomeFinal>
             <Footer></Footer>
-            <FloatingWhatsApp phoneNumber="+5493513874298"
+            <FloatingWhatsApp className='wsp'
+                              phoneNumber="+5493513874298"
                               accountName='GEA'
                               avatar={images.logoColor}
                               statusMessage='Contesta en 1 hora aproximadamente'
@@ -65,6 +66,7 @@ const HomeH1 = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    
     h1{
         position: absolute;
         font-family: Arial, Helvetica, sans-serif;
@@ -75,6 +77,7 @@ const HomeH1 = styled.div`
         bottom: 45%;
     }
     @media (max-width:764px) {
+      z-index: -3;
       .imgHome{
         height: 300px;
       }

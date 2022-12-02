@@ -1,22 +1,25 @@
-import React, {useState} from "react";
+import React from 'react'
 import styled from 'styled-components'
 
-function BurgerButton(props){
-    return(
-        <Burger>
-            <div onClick={props.handleClick} className={`icon nav-icon-5 ${props.clicked ? 'open': ''}`}>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </Burger>
-    )
+function BurguerButton(props) {
+  return (
+    <Burguer>
+      <div  onClick={props.handleClick} 
+            className={`icon nav-icon-5 ${props.clicked ? 'open' : ''}`}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </Burguer>
+  )
 }
 
-export default BurgerButton
+export default BurguerButton
 
-const Burger = styled.div`
-    .nav-icon-5{
+const Burguer = styled.div`
+  /* nav-icon-5 */
+.nav-icon-5{
   width: 35px;
   height: 30px;
   margin: 10px 10px;
@@ -48,6 +51,7 @@ const Burger = styled.div`
 }
 .nav-icon-5:not(.open):hover span:nth-child(1){
   transform: rotate(-3deg) scaleY(1.1);
+  
 }
 .nav-icon-5:not(.open):hover span:nth-child(2){
   transform: rotate(3deg) scaleY(1.1);
@@ -58,6 +62,7 @@ const Burger = styled.div`
 .nav-icon-5.open span:nth-child(1){
   transform: rotate(45deg);
   top: 13px;
+  background-color: white;
 }
 .nav-icon-5.open span:nth-child(2){
   opacity:0;
@@ -65,5 +70,6 @@ const Burger = styled.div`
 .nav-icon-5.open span:nth-child(3){
   transform: rotate(-45deg);
   top: 13px;
+  background-color: white;
 }
 `
