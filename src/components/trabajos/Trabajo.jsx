@@ -18,7 +18,7 @@ const Trabajo =()=>{
                 img2={icons.list} title2='Estudios Realizados' number2='325'
                 img3={icons.smile} title3='Clientes Satifechos' number3='243'
                 img4={icons.world} title4='Paises Trabajados' number4='8'></Cards2>
-      <h2>¿Que servicios realizamos?</h2>
+      <h2>¿Donde trabajamos?</h2>
       <br></br>
       <p>Estos son algunos de nuestros trabajos mas relevantes</p>
       <br></br>

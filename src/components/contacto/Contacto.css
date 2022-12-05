@@ -2,15 +2,15 @@
 .contact_form{	
 	width: 100%; 
 	text-align: center;
-  height: auto;
+  	height: auto;
 /*   margin: 80px auto; */
 	/* border-radius: 10px;  */ 
 	padding-top: 30px;
 	padding-bottom: 20px;  
   background-image: url('./../../images/stockImage6.jpg');
   background-repeat: no-repeat;
-  background-size: 100%;
-  padding-left: 30px;
+ /*  background-size: 100%; */
+  /* padding-left: 30px; */
   align-items: center;
   justify-content: center;
   display: flex;
@@ -22,7 +22,15 @@
 	border-radius: 10px;
 	padding: 2%;
 	box-shadow: 1px 10px 10px black;
+
 }
+@media (max-width:764px) {
+	.formulario{
+		width: 95%;
+		padding: 5%;
+	}
+}
+
 
 #nombre, #email, #telefono, #assunto{
 	background-color: #fbfbfb; 
@@ -36,7 +44,12 @@
 	padding-left: 10px;
   margin-bottom: 20px; 
 }
-
+@media (max-width:764px) {
+	#nombre, #email, #telefono, #assunto, #mensaje{
+		width: 90%;
+		
+	}
+}
 
 textarea{
   background-color: #fbfbfb; 
@@ -73,7 +86,11 @@ textarea{
 	width: 420px;   
   cursor: pointer;
 }
-
+@media (max-width:764px) {
+	#enviar{
+		width: 90%;
+	}
+}
 
 #enviar p{
 	color: #fff; 

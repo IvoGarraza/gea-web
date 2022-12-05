@@ -120,10 +120,6 @@ const Empresa = () =>{
                     </div>
                     <img src={images.homeImg2}></img>
                 </div>
-                <div className="contentInfo4" data-aos='fade-left'>
-                    <h2>3- ¿Como trabajamos?</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, pariatur velit voluptas odit vitae perspiciatis minus, non a ipsam saepe architecto ut rerum quod voluptates iure soluta earum eius magnam.</p>
-                </div>
 
                 <Footer></Footer>    
             </EmpresaStyled>

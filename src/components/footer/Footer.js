@@ -77,5 +77,5 @@ export default Footer
 const Gea = styled.h2`
     color: white;
     align-items: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
 `
