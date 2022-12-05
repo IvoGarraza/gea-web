@@ -1,27 +1,11 @@
 import React, { useState } from "react";
-/* import "./Navbar.css"; */
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import images from "../../images/images.js";
-import { slide as Menu } from 'react-burger-menu'
 import BurgerButton from "./Burgerbutton";
 
 
-/* const Navbar = () => {
-  return (
-   <div class="nav">
-    <img src={images.logo} class="logoNav"></img>
-    <ul class="links">
-      <li><Link to='/'>Inicio</Link></li>
-      <li><Link to='/trabajos'>Trabajos</Link></li>
-      <li><Link to='/empresa'>Nosotros</Link></li>
-      <Link to='/contacto'><Contact href='mailto:ivogarrachip@gmail.com'><button class="button-87" role="button" >Contacto</button></Contact></Link>
-    </ul>
 
-   </div>
-)}
-
- */
 
 const Navbar = () =>{
   const [clicked, setClicked] = useState(false)
