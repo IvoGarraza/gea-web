@@ -37,9 +37,6 @@ const Empresa = () =>{
     return(
         <div className="empresaPage">
             <EmpresaStyled>
-                <div class='carousel'>
-                    
-                </div>
                 <div class='contentInfo'>
                     <div class='Info' data-aos='fade-up' data-aos-duration='1000'>
                         <h2>Sobre Nosotros</h2>
@@ -147,6 +144,10 @@ const EmpresaStyled = styled.div`
         align-items: center;
         justify-content: center;
         padding: 5%;
+        @media (max-width:764px) {
+            margin: 2%;
+            flex-direction: column-reverse;
+        }
     }
     .contentInfo img{
         width: 100%;
@@ -159,9 +160,21 @@ const EmpresaStyled = styled.div`
         img{
             width: 50%;
         }
+        @media (max-width:764px) {
+            flex-direction: column;
+            img{
+            width: 100%;
+        }
+        .services{
+            
+            margin-top: 5%;
+            margin-bottom: 55;
+        }
+        }
     }
     .subtitle{
         text-align: center;
+        margin: 3%;
     }
     .services{
         margin-left: 5%;
@@ -173,6 +186,15 @@ const EmpresaStyled = styled.div`
         justify-content: space-between;
         img{
             width: 40%;
+        }
+        @media (max-width:764px) {
+            flex-direction: column-reverse;
+            img{
+                width: 100%;
+            }
+            .services2{
+                margin:5%;
+            }
         }
     }
     .services2 {

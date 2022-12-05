@@ -5,33 +5,31 @@ import Footer from "../footer/Footer";
 import CountUp from 'react-countup';
 import Cards2 from "../cards/cards2";
 import Contador from "../contador/contador";
+import Cards3 from "../cards/cards3";
+import Mapa from "../map/map";
+import icons from "../../images/icons/icons";
+import images from "../../images/images";
 
 const Trabajo =()=>{
   return(
     <MapContent>
-      <h2>¿Que estudios hicimos?</h2>
+            <Cards2
+                img={icons.clipboard} title1='Trabajos Realizados' number1='100'
+                img2={icons.list} title2='Estudios Realizados' number2='325'
+                img3={icons.smile} title3='Clientes Satifechos' number3='243'
+                img4={icons.world} title4='Paises Trabajados' number4='8'></Cards2>
+      <h2>¿Que servicios realizamos?</h2>
+      <br></br>
       <p>Estos son algunos de nuestros trabajos mas relevantes</p>
-      <Cards2
-                title1='Trabajos Realizados' number1='100'
-                title2='Estudios Realizados' number2='325'
-                title3='Clientes Satifechos' number3='243'
-                title4='Paises Trabajados' number4='8'></Cards2>
-      <div className="containerContador2">
-        <Contador></Contador>
-      </div>
+      <br></br>
+      <br></br>
       <div class='mapContainer'>
-      <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false}>
-        <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        />
-        <Marker position={[-31.403364339934477, -64.1908088494179]}>
-          <Popup>
-            A pretty CSS3 popup. <br /> Easily customizable.
-          </Popup>
-        </Marker>
-      </MapContainer>
+        <Mapa></Mapa>
       </div>
+
+      <div className="containerContador2">
+      </div>
+
       <Footer></Footer>
     </MapContent>
   )

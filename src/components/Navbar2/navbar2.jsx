@@ -39,6 +39,7 @@ function Navbar() {
 export default Navbar
 
 const NavContainer = styled.nav`
+border-bottom: 1px solid black;
 .lista{
     @media (max-width: 764px) {
         display: none;
@@ -127,10 +128,9 @@ const NavContainer = styled.nav`
 `
 
 const BgDiv = styled.div`
-  background-color: #222;
+  background-color: #a17c00;
   position: absolute;
-  /* top: -1000px; */
-  left: -1000px;
+  left: -800px;
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -142,7 +142,7 @@ const BgDiv = styled.div`
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    
     z-index: 1
   }
 
